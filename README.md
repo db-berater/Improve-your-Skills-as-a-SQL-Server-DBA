@@ -1,7 +1,7 @@
-# Workshop - Accelerate your T-SQL Code
-This repository contains all codes for my workshop "Accelerate your SQL Code" which deals with several real world examples of bad written SQL Code
+# Workshop - Improve your Skills as a SQL Server DBA
+This repository contains all codes for my workshop "Improve your Skills as a SQL Server DBA" which deals with several real world examples of bad written SQL Code
 All scripts are created for the use of Microsoft SQL Server (Version 2016 or higher)
-To work with the scripts it is required to have the workshop database [ERP_Demo](https://www.db-berater.de/downloads/ERP_DEMO_2012.BAK) installed on your SQL Server Instance.
+To work with the scripts it is required to have the workshop database ERP_Demo installed on your SQL Server Instance.
 The last version of the demo database can be downloaded here:
 
 **https://www.db-berater.de/downloads/ERP_DEMO_2012.BAK**
@@ -23,12 +23,12 @@ The database contains a framework for all workshops / sessions from db Berater G
 + Stored Procedures
 + User Definied Inline Functions
 
-Workshop Scripts for SQL Server Workshop "Accelerate your T-SQL Code"
+Workshop Scripts for SQL Server Workshop "Improve your Skills as a SQL Server DBA"
 Version:	1.00.100
-Date:		2025-02-14
+Date:		2025-09-15
 
 # Folder structure
-+ Each scenario is stored in a separate folder (e.g. Scenario 01 in Folder Scenario 01) in the Folder "04 - Workshop Scenarios"
++ Each topic has a dedicated scenario which deals with examples concerning the topic
 + All scripts have numbers and basically the script with the prefix 01 is for the preparation of the environment
 + The folder **SQL ostress** contains .cmd files as substitute for SQL Query Stress (when possible!).
    To use ostress you must download and install the **[RML Utilities](https://learn.microsoft.com/en-us/troubleshoot/sql/tools/replay-markup-language-utility)**
@@ -42,16 +42,12 @@ Date:		2025-02-14
 + The folder **SQL Extended Events** contains scripts for the implementation of extended events for the different scenarios
   All extended events are written for "LIVE WATCHING" and will have no target file for saving the results.
 
-# Scenario 01
-The development team love to work with user definied functions (UDF).
-So they decided to create an UDF which calculates the status of any customer by year.
-The calculation is a simple math:
-
-+ A customer: More or equal than 20 orders in a given year
-+ B customer: 10 - 19 orders for a given year
-+ C customer: 05 - 09 orders for a given year
-+ D customer: 01 - 04 orders for a given year
-+ Z customer: no orders for a given year
+# 01 - Performance Tools
+This folder contains all workloads for the demonstration of
++ Query Store
++ Windows Admin Center
++ Resource Monitor
++ Extended Events
 
 # Scenario 02
 A software uses a table to queue jobs. Whenever a new job is to be queued,
