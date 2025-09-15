@@ -44,7 +44,7 @@ EXEC dbo.sp_activate_query_store;
 GO
 
 /*
-	We create a stored procedure which creates a stored procedure
+	We create a stored procedure which creates a workload
 	for the execution in SQLQueryStress
 */
 CREATE OR ALTER PROCEDURE dbo.get_customer_info
