@@ -82,14 +82,18 @@ Templates for using SQLQueryStress to perform load testing on Microsoft SQL Serv
 ** Example**
 ```json
 {
-    "CollectIoStats": true,
-    "CollectTimeStats": true,
-    "CommandTimeout": 0,
-    "ConnectionTimeout": 15,
-    "DelayBetweenQueries": 0,
-    "EnableConnectionPooling": true
+	"MainDbConnectionInfo":
+	{
+		...
+		"IntegratedAuth":true,
+		"Login":"",
+		"MaxPoolSize":2,
+		"Password":"",
+		"Server":"SQLServer",
+		"TrustServerCertificate":true
+		...
+	}
 }
 ```
-
 # 80 - Extended Events
 # 90 - Tools and Scripts
