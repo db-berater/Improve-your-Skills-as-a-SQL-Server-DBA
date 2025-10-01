@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "workspace": {
+        "name": "Windows Admin Server Demo",
+        "created": "2025-10-09T00:00:00.000Z",
+        "modified": "2025-10-09T00:00:00.000Z",
+        "timeRange": "FifteenMinutes",
+        "isCluster": false
+    },
+    "counters": 
+    [
+        {
+            "object": "Prozessor",
+            "instances": 
+            [
+                {
+                    "instanceName": "_Total"
+                }
+            ],
+            "counters": 
+            [
+                "Prozessorzeit (%)"
+            ],
+            "type": "Line"
+        },
+        {
+            "object": "System",
+            "counters": 
+            [
+                "Processor Queue Length"
+            ],
+            "type": "Line"
+        },
+        {
+            "object": "MSSQL$SQL_2022:SQL Statistics",
+            "counters": 
+            [
+                "Batch Requests/sec",
+                "SQL Re-Compilations/sec",
+                "SQL Compilations/sec"
+            ],
+            "type": "Line"
+        }
+    ]
+}

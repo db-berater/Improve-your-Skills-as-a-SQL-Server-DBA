@@ -1,10 +1,6 @@
 • Fehlender Zugriff auf Ressourcen einer Datenbank
-• Backup und Restore: Strategien für kleine, mittlere und große Datenbanken
+
 • Sperren und Sperrausweitung erkennen sowie Lösungsansätze erarbeiten
-• Ursachen für plötzlich langsame Abfragen („Gestern lief die Abfrage aber schneller!") wie Parameter Sniffing, falsche Statistiken und Einsatz des Query Stores
 • Warum muss Microsoft SQL Server warten? Analyse von Wartevorgängen, Demonstration klassischer Wartevorgänge und Optimierungsmöglichkeiten
 • Indexierung: Wie erkennt man schlechte Abfrageausführungen, welche Indizes sind performant und welche fehlen?
-• Analysewerkzeuge für Performance-Messungen, z. B. PERFMON, Extended Events und Profiler
 • Geeignete Tools für das Monitoring von SQL Server-Instanzen
-• Replikationsprobleme
-• Probleme in Hochverfügbarkeitslösungen wie Clusterbetrieb und AlwaysOn Availability Groups
