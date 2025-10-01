@@ -80,6 +80,6 @@ The author performed the configuration using a German operating system. Not all 
 # 70 - SQL Query Stress
 Templates for using SQLQueryStress to perform load testing on Microsoft SQL Server. The templates use the names of the DBA tasks (see structure above).
 ** Example**
-<pre><code>```json{"CollectIoStats": true,"CollectTimeStats": true,"CommandTimeout": 0,"ConnectionTimeout": 15,"DelayBetweenQueries": 0,"EnableConnectionPooling": true,"ForceDataRetrieval": false,"KillQueriesOnCancel": true,"MainDbConnectionInfo": {"AdditionalParameters": "","ApplicationIntent": 0,"AzureMFA": false,"ConnectTimeout": 15,"Database": "demo_db","EnablePooling": true,"EncryptOption": "False","IntegratedAuth": true,"Login": "","MaxPoolSize": 2,"Password": "","Server": "SQLServer","TrustServerCertificate": true},"MainQuery": "EXEC dbo.get_customers_by_nation @n_nationkey = @n_nationkey;","NumIterations": 100,"NumThreads": 4,"ParamDbConnectionInfo": {"AdditionalParameters": "","ApplicationIntent": 0,"AzureMFA": false,"ConnectTimeout": 0,"Database": "","EnablePooling": true,"EncryptOption": "False","IntegratedAuth": true,"Login": "","MaxPoolSize": 0,"Password": "","Server": "(local)","TrustServerCertificate": false},"ParamMappings": [{"Key": "@n_nationkey","Value": "n_nationkey"}],"ParamQuery": "SELECT n_nationkey FROM dbo.nations;","ShareDbSettings": true}```</code></pre>
+```json{"CollectIoStats": true,"CollectTimeStats": true,"CommandTimeout": 0,"ConnectionTimeout": 15,"DelayBetweenQueries": 0,"EnableConnectionPooling": true}```
 
 # 80
