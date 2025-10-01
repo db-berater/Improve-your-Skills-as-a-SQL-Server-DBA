@@ -80,6 +80,14 @@ The author performed the configuration using a German operating system. Not all 
 # 70 - SQL Query Stress
 Templates for using SQLQueryStress to perform load testing on Microsoft SQL Server. The templates use the names of the DBA tasks (see structure above).
 ** Example**
-```json{"CollectIoStats": true,"CollectTimeStats": true,"CommandTimeout": 0,"ConnectionTimeout": 15,"DelayBetweenQueries": 0,"EnableConnectionPooling": true}```
+```json
+{
+    "CollectIoStats": true,
+    "CollectTimeStats": true,
+    "CommandTimeout": 0,
+    "ConnectionTimeout": 15,
+    "DelayBetweenQueries": 0,
+    "EnableConnectionPooling": true
+}```
 
 # 80
