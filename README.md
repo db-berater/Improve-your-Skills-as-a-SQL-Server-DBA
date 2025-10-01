@@ -81,6 +81,7 @@ The author performed the configuration using a German operating system. Not all 
 Templates for using SQLQueryStress to perform load testing on Microsoft SQL Server. The templates use the names of the DBA tasks (see structure above).
 All templates reference a SQL Server Instance named "SQLServer". It is recommended to create a SQL Alias with this name.
 This prevents you from changing all templates with the name of your Microsoft SQL Server Instance.
+
 **Example**
 ```json
 {
@@ -95,4 +96,10 @@ This prevents you from changing all templates with the name of your Microsoft SQ
 	}
 }
 ```
-# 80
+# 80 - Extended Events
+Scripts for the implementation of Extended Events for the different scenarios.
+All extended events are written for "LIVE WATCHING" and will have no target file for saving the results.
+
+# 90 - Tools and Scripts
++ Maintenance Solution from [Ola Hallengren](https://ola.hallengren.com/)
++ sp_whoisactive from [Adam Machanic](https://github.com/amachanic/sp_whoisactive)_
