@@ -88,6 +88,8 @@ Templates for using SQLQueryStress to perform load testing on Microsoft SQL Serv
     "ConnectionTimeout": 15,
     "DelayBetweenQueries": 0,
     "EnableConnectionPooling": true
-}```
+}
+```
 
-# 80
+# 80 - Extended Events
+# 90 - Tools and Scripts
