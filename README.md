@@ -27,7 +27,7 @@ Workshop Scripts for SQL Server Workshop "Improve your Skills as a SQL Server DB
 Version:	1.00.100
 Date:		2025-10-01
 
-** Tip for json scripts for OSTRESS and/or SQLQueryStress**
+**Tip for json scripts for OSTRESS and/or SQLQueryStress**
 All templates reference to a machine called "SQLServer". If you don't want to change the names to your instance name I recommend to create a SQL Alias on your local machine.
 For details see the offical Microsoft documentation:
 https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client?view=sql-server-ver17
@@ -48,7 +48,7 @@ https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-o
 + The folder **SQL Extended Events** contains scripts for the implementation of extended events for the different scenarios
   All extended events are written for "LIVE WATCHING" and will have no target file for saving the results.
 
-# 01 - Preparation an Presentation
+# 01 - Preparation and Presentation
 This folder contains all Powerpoint Presentations required for this workshop
 + Powerpoint Slides
 + Stored Procedure for the restore of ERP_Demo Database (not required)_
@@ -74,12 +74,25 @@ Depending on the scope, several demo scripts may be present in the folder.
 
 # 60 - Windows Admin Center
 During the workshop, various scenarios will be examined for performance bottlenecks. We will use the Windows Admin Center for this purpose. The folder contains dedicated monitoring templates for all demonstrations.
-** Note **
+**Note**
 The author performed the configuration using a German operating system. Not all templates have been modified for English operating systems.
 
 # 70 - SQL Query Stress
 Templates for using SQLQueryStress to perform load testing on Microsoft SQL Server. The templates use the names of the DBA tasks (see structure above).
-** Example**
-<pre><code>```json{"CollectIoStats": true,"CollectTimeStats": true,"CommandTimeout": 0,"ConnectionTimeout": 15,"DelayBetweenQueries": 0,"EnableConnectionPooling": true,"ForceDataRetrieval": false,"KillQueriesOnCancel": true,"MainDbConnectionInfo": {"AdditionalParameters": "","ApplicationIntent": 0,"AzureMFA": false,"ConnectTimeout": 15,"Database": "demo_db","EnablePooling": true,"EncryptOption": "False","IntegratedAuth": true,"Login": "","MaxPoolSize": 2,"Password": "","Server": "SQLServer","TrustServerCertificate": true},"MainQuery": "EXEC dbo.get_customers_by_nation @n_nationkey = @n_nationkey;","NumIterations": 100,"NumThreads": 4,"ParamDbConnectionInfo": {"AdditionalParameters": "","ApplicationIntent": 0,"AzureMFA": false,"ConnectTimeout": 0,"Database": "","EnablePooling": true,"EncryptOption": "False","IntegratedAuth": true,"Login": "","MaxPoolSize": 0,"Password": "","Server": "(local)","TrustServerCertificate": false},"ParamMappings": [{"Key": "@n_nationkey","Value": "n_nationkey"}],"ParamQuery": "SELECT n_nationkey FROM dbo.nations;","ShareDbSettings": true}```</code></pre>
-
+All templates reference a SQL Server Instance named "SQLServer". It is recommended to create a SQL Alias with this name.
+This prevents you from changing all templates with the name of your Microsoft SQL Server Instance.
+**Example**
+```json
+{
+	"MainDbConnectionInfo":
+	{
+		"IntegratedAuth":true,
+		"Login":"",
+		"MaxPoolSize":2,
+		"Password":"",
+		"Server":"SQLServer",
+		"TrustServerCertificate":true
+	}
+}
+```
 # 80
