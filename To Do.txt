@@ -1,3 +1,3 @@
-• Fehlender Zugriff auf Ressourcen einer Datenbank
+/* In Progress */
 • Sperren und Sperrausweitung erkennen sowie Lösungsansätze erarbeiten
 • Indexierung: Wie erkennt man schlechte Abfrageausführungen, welche Indizes sind performant und welche fehlen?

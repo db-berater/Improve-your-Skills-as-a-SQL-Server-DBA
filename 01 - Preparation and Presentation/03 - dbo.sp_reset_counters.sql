@@ -33,6 +33,5 @@ BEGIN
 END
 GO
 
-
 EXEC master..sp_ms_marksystemobject N'dbo.sp_reset_counters';
 GO
