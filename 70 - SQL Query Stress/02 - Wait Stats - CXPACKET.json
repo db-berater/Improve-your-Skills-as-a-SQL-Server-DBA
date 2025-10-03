@@ -1,0 +1,54 @@
+{
+	"CollectIoStats":true,
+	"CollectTimeStats":true,
+	"CommandTimeout":0,
+	"ConnectionTimeout":15,
+	"DelayBetweenQueries":0,
+	"EnableConnectionPooling":true,
+	"ForceDataRetrieval":false,
+	"KillQueriesOnCancel":true,
+	"MainDbConnectionInfo":
+	{
+		"AdditionalParameters":"",
+		"ApplicationIntent":0,
+		"AzureMFA":false,
+		"ConnectTimeout":15,
+		"Database":"demo_db",
+		"EnablePooling":true,
+		"EncryptOption":"False",
+		"IntegratedAuth":true,
+		"Login":"",
+		"MaxPoolSize":2,
+		"Password":"",
+		"Server":"SQLServer",
+		"TrustServerCertificate":true
+	},
+	"MainQuery":"EXEC dbo.get_customer_analysis @c_custkey = @c_custkey, @cxpacket = 1;",
+	"NumIterations":1000,
+	"NumThreads":10,
+	"ParamDbConnectionInfo":
+	{
+		"AdditionalParameters":"",
+		"ApplicationIntent":0,
+		"AzureMFA":false,
+		"ConnectTimeout":0,
+		"Database":"",
+		"EnablePooling":true,
+		"EncryptOption":"False",
+		"IntegratedAuth":true,
+		"Login":"",
+		"MaxPoolSize":0,
+		"Password":"",
+		"Server":"(local)",
+		"TrustServerCertificate":false
+	},
+	"ParamMappings":
+	[
+		{
+			"Key":		"@c_custkey",
+			"Value":	"c_custkey"
+		}
+	],
+	"ParamQuery":"SELECT c_custkey FROM dbo.year_list;",
+	"ShareDbSettings":true
+}

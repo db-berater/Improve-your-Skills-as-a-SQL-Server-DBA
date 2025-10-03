@@ -27,6 +27,12 @@
 USE master;
 GO
 
+/*
+	Let's create a database first for the storage of data
+
+	Note:	The code for the stored procedure can be found in
+			[01 - Preparation an Presentation]\[02 - dbo.sp_create_demo_db.sql]
+*/
 EXEC master..sp_create_demo_db
 	@num_of_files = 1,
     @initial_size_MB = 1024,
@@ -42,7 +48,14 @@ GO
 RAISERROR ('creating table [dbo].[customers]...', 0, 1) WITH NOWAIT;
 GO
 
-SELECT	*
+SELECT	c_custkey,
+        c_mktsegment,
+        c_nationkey,
+        c_name,
+        c_address,
+        c_phone,
+        c_acctbal,
+        c_comment
 INTO	dbo.customers
 FROM	ERP_Demo.dbo.customers;
 GO
@@ -50,7 +63,10 @@ GO
 RAISERROR ('creating table [dbo].[nations]...', 0, 1) WITH NOWAIT;
 GO
 
-SELECT	*
+SELECT	n_nationkey,
+        n_name,
+        n_regionkey,
+        n_comment
 INTO	dbo.nations
 FROM	ERP_Demo.dbo.nations;
 GO

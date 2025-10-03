@@ -102,4 +102,4 @@ All extended events are written for "LIVE WATCHING" and will have no target file
 
 # 90 - Tools and Scripts
 + Maintenance Solution from [Ola Hallengren](https://ola.hallengren.com/)
-+ sp_whoisactive from [Adam Machanic](https://github.com/amachanic/sp_whoisactive)_
++ sp_whoisactive from [Adam Machanic](https://github.com/amachanic/sp_whoisactive)

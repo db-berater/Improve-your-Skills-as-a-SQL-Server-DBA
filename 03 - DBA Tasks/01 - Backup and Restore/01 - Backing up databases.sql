@@ -19,6 +19,9 @@ GO
 
 /*
 	Let's create a database first for the storage of data
+
+	Note:	The code for the stored procedure can be found in
+			[01 - Preparation an Presentation]\[02 - dbo.sp_create_demo_db.sql]
 */
 EXEC dbo.sp_create_demo_db
 	@num_of_files = 1,

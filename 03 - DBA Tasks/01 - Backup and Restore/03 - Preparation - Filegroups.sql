@@ -19,8 +19,11 @@ GO
 
 /*
 	Let's create a database first for the storage of data
-	Note:	The database will have 8 different files.
-			Every file is in a separate filegroup!
+	The database will create 8 database files in 8 different filegroups.
+	Each file has a size of 1 GB
+
+	Note:	The code for the stored procedure can be found in
+			[01 - Preparation an Presentation]\[02 - dbo.sp_create_demo_db.sql]
 */
 EXEC dbo.sp_create_demo_db
 	@num_of_files = 8,

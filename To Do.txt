@@ -1,6 +1,3 @@
 • Fehlender Zugriff auf Ressourcen einer Datenbank
-
 • Sperren und Sperrausweitung erkennen sowie Lösungsansätze erarbeiten
-• Warum muss Microsoft SQL Server warten? Analyse von Wartevorgängen, Demonstration klassischer Wartevorgänge und Optimierungsmöglichkeiten
 • Indexierung: Wie erkennt man schlechte Abfrageausführungen, welche Indizes sind performant und welche fehlen?
-• Geeignete Tools für das Monitoring von SQL Server-Instanzen
