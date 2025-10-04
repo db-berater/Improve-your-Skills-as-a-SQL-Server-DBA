@@ -23,8 +23,8 @@ The database contains a framework for all workshops / sessions from db Berater G
 + Stored Procedures
 + User Definied Inline Functions
 
-Workshop Scripts for SQL Server Workshop "Improve your Skills as a SQL Server DBA"
-Version:	1.00.500
+Workshop Scripts for SQL Server Workshop "Improve your Skills as a SQL Server DBA"\
+Version:	1.00.500\
 Date:		2025-10-04
 
 **Tip for json scripts for OSTRESS and/or SQLQueryStress**
