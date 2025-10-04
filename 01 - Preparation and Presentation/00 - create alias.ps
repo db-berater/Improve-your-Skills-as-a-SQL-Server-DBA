@@ -1,0 +1,22 @@
+param
+(
+    [string]$AliasName = "SQLServer",
+    [string]$ServerName = "MyServer",
+    [int]$Port = 1433,
+    [string]$Protocol = "DBMSSOCN"  # Use "DBNMPNTW" for Named Pipes
+)
+
+$aliasValue = "$Protocol,$ServerName" # ",$Port"
+
+$paths = @(
+    "HKLM:\SOFTWARE\Microsoft\MSSQLServer\Client\ConnectTo",
+    "HKLM:\SOFTWARE\WOW6432Node\Microsoft\MSSQLServer\Client\ConnectTo"
+)
+
+foreach ($path in $paths) {
+    if (-not (Test-Path $path)) {
+        New-Item -Path $path -Force | Out-Null
+    }
+    New-ItemProperty -Path $path -Name $AliasName -PropertyType String -Value $aliasValue -Force
+    Write-Host "Alias '$AliasName' created under $path"
+}

@@ -44,7 +44,8 @@ https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-o
   - Before you can use the JSON templates make sure you replace the Machine Name / Instance Name with your Machine Name / Instance Name
 + The folder **SQL Query Stress** contains prepared configuration settings for each scenario which produce load test with SQLQueryStress from Adam Machanic
   - [SQLQueryStress](https://github.com/ErikEJ/SqlQueryStress)
-  - Before you can use the JSON templates make sure you replace the Machine Name / Instance Name with your Machine Name / Instance Name
+  - Before you can use the JSON templates make sure you replace the Machine Name / Instance Name with your Machine Name / Instance Name.
+  - If you are using an ALIAS "SQLServer", you don't have to change anything on the templates. 
 + The folder **SQL Extended Events** contains scripts for the implementation of extended events for the different scenarios
   All extended events are written for "LIVE WATCHING" and will have no target file for saving the results.
 
@@ -54,7 +55,11 @@ This folder contains all Powerpoint Presentations required for this workshop
 + Stored Procedure for the restore of ERP_Demo Database (not required)_
 + Preparation of demo database
 + Stored Procedure for the creation of a demo_db Database for dedicated scenarios
-  The stored procedure will be created in the master database and marked as system object!_
+  The stored procedure will be created in the master database and marked as system object!
++ Stored Procedure for the reset of User Counters and Wait Stats Analysis
++ Stored Procedure for reading data from the Ring Buffer and display it as table
+
+NOTE: All Stored Procedures will automatically be created when you restore the ERP_Demo Database by script "01 - Preparation of demo database.sql"
 
 # 02 - Analysis Tools
 This folder contains workloads/demos to demonstrate the following Analysis Tools

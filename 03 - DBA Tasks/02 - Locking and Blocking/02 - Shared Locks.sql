@@ -52,7 +52,7 @@ GO
 /*
 	Before you run this query execute the implementation of an extended event
 
-	RUN:	[97 Extended Events]/[02 - read committed locks.sql]
+	RUN:	[80 Extended Events]/[02 - 02 - read shared locks.sql]
 
 	which covers all locks while the SELECT is running.
 	You must change the session_id to the session_id of this tab!
@@ -92,6 +92,50 @@ GO
 
 /*
 	Now we select a specific o_orderky from dbo.orders
+	Notice:	The table dbo.orders has a CLUSTERED INDEX!
+
+	Rerun the creation of the extend event before we start the demo!
+*/
+SELECT	o_orderdate,
+        o_orderkey,
+        o_custkey,
+        o_orderpriority,
+        o_shippriority,
+        o_clerk,
+        o_orderstatus,
+        o_totalprice,
+        o_comment,
+        o_storekey
+FROM	dbo.orders
+WHERE	o_orderkey = 3877;
+GO
+
+/*
+	Stop the recording by dropping both events for tracking the locks
+	Notice that the table is a HEAP Table!
+*/
+ALTER EVENT SESSION [locking_shared_locks] ON SERVER
+	DROP EVENT sqlserver.lock_acquired,
+	DROP EVENT sqlserver.lock_released;
+GO
+
+/* ... and read the data from the ring buffer */
+EXEC master.dbo.sp_read_xevent_locks
+	@xevent_name = N'locking_shared_locks';
+GO
+
+/*
+	When another process hold an U / X Lock on a specific row than
+	the locking is working different
+
+	Take the following code and execute it in another query window
+
+BEGIN TRANSACTION
+GO
+	UPDATE	dbo.orders
+	SET		o_orderdate = GETDATE()
+	WHERE	o_orderkey = 3877;
+
 	Rerun the creation of the extend event before we start the demo!
 */
 SELECT	o_orderdate,
