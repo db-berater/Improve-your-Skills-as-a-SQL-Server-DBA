@@ -24,14 +24,13 @@ The database contains a framework for all workshops / sessions from db Berater G
 + User Definied Inline Functions
 
 Workshop Scripts for SQL Server Workshop "Improve your Skills as a SQL Server DBA"
-Version:	1.00.100
-Date:		2025-10-01
+Version:	1.00.500
+Date:		2025-10-04
 
 **Tip for json scripts for OSTRESS and/or SQLQueryStress**
 All templates reference to a machine called "SQLServer". If you don't want to change the names to your instance name I recommend to create a SQL Alias on your local machine.
 For details see the offical Microsoft documentation:
 https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client?view=sql-server-ver17
-
 
 # Folder structure
 + Each topic has a dedicated scenario which deals with examples concerning the topic
@@ -71,12 +70,22 @@ This folder contains workloads/demos to demonstrate the following Analysis Tools
 # 3 - DBA Tasks
 This folder contains a separate folder for each DBA task, containing all scripts that have a "Preparation" -> "Demo" and a "Cleanup" for the corresponding topic.
 Depending on the scope, several demo scripts may be present in the folder.
-+ 01 - Backup and Restore
-+ 02 - Locking and Blocking
-+ 03 - Parameter Sniffing
-+ 04 - Wait Stats Analysis
-+ 05 - Indexes and Statistics
-
+## 01 - Backup and Restore
+Demos for Backup Scenarios
+## 02 - Locking and Blocking
+Demos for Locking and Blocking of processes
+## 03 - Parameter Sniffing
+Demos for Problems with Parameter Sniffing and possible solutions
+## 04 - Wait Stats Analysis
+Demos for different wait types
++ CXPACKET
++ SOS_SCHEDULER_YIELD
++ THREADPOOL
++ ASYNC_NETWORK_IO
+## 05 - Indexes and Statistics
+This folder contains a complex demos about the internal structure of indexes and problems with PAGE_SPLIT and fragmentation. Two different fragmentation types are covered:
++ Logical Fragmentation
++ Physical Fragmentation
 # 60 - Windows Admin Center
 During the workshop, various scenarios will be examined for performance bottlenecks. We will use the Windows Admin Center for this purpose. The folder contains dedicated monitoring templates for all demonstrations.
 **Note**
@@ -104,6 +113,10 @@ This prevents you from changing all templates with the name of your Microsoft SQ
 # 80 - Extended Events
 Scripts for the implementation of Extended Events for the different scenarios.
 All extended events are written for "LIVE WATCHING" and will have no target file for saving the results.
+Some Extended Events are using the Ring Buffer Object to read data from.
+In this case you can use the stored procedures master..sp_read_xevent_...
+These stored procedures will be implemented in the preparation phase from script
+[01 - Preparation and Presentation]\[01 - Preparation of demo databases.sql]
 
 # 90 - Tools and Scripts
 + Maintenance Solution from [Ola Hallengren](https://ola.hallengren.com/)
