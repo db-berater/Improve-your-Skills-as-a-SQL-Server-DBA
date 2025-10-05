@@ -6,23 +6,15 @@
 				for the chapter
 				- Working with Query Store
 				
-				THIS SCRIPT IS PART OF THE WORKSHOP:
-					"Workshop - Making Bad Codes better"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
 
-	Date:		October 2024
-	Revion:		November 2024
+	Version:	1.00.000
+
+	Date:		October 2025
+	Revion:		October 2025
 
 	SQL Server Version: >= 2016
-	------------------------------------------------------------------------------
-	Written by Uwe Ricken, db Berater GmbH
-
-	This script is intended only as a supplement to demos and lectures
-	given by Uwe Ricken.  
-  
-	THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF 
-	ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED 
-	TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
-	PARTICULAR PURPOSE.
 	============================================================================
 */
 USE ERP_Demo;
@@ -94,6 +86,6 @@ AS
 			) AS x (c_custkey);
 GO
 
-RAISERROR ('Now open SQLQueryStress and load the settings of [demo of Query Store.json]', 0, 1) WITH NOWAIT;
+RAISERROR ('Now open SQLQueryStress and load the settings of from "70 - SQL Query Stress\01 - Analysis Tools\01 - Query Store.json"', 0, 1) WITH NOWAIT;
 RAISERROR ('Start the process the first time and watch the metrics.', 0, 1) WITH NOWAIT;
 GO

@@ -4,22 +4,15 @@
 
 		Summary:	This script demonstrates the wait stat: CXPACKET
 
-					THIS SCRIPT IS PART OF THE WORKSHOP:
-						"Improve your Skills as a SQL Server DBA"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
 
-		Date:		October 2025
+	Version:	1.00.000
 
-		SQL Server Version: >=2016
-	------------------------------------------------------------------------------
-		Written by Uwe Ricken, db Berater GmbH
+	Date:		October 2025
+	Revion:		October 2025
 
-		This script is intended only as a supplement to demos and lectures
-		given by Uwe Ricken.  
-  
-		THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF 
-		ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED 
-		TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
-		PARTICULAR PURPOSE.
+	SQL Server Version: >= 2016
 	============================================================================
 */
 SET NOCOUNT ON;

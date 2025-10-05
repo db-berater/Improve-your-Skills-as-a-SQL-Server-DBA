@@ -1,19 +1,21 @@
-/*============================================================================
+/*
+	============================================================================
 	File:		03 - Backup Restore Filegroups.sql
 
 	Summary:	This demo shows the management of backup / restore strategies
 				for VLDB and multiple filegroups
 
-	Date:		May 2025
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
+
+	Version:	1.00.000
+
+	Date:		October 2025
+	Revion:		October 2025
 
 	SQL Server Version: >= 2016
-------------------------------------------------------------------------------
-
-	THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF 
-	ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED 
-	TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
-	PARTICULAR PURPOSE.
-============================================================================*/
+	============================================================================
+*/
 USE master;
 GO
 

@@ -7,9 +7,12 @@
 				of objects and displays them as a table.
 				
 				THIS SCRIPT IS PART OF THE TRACK:
-					Session: Solving Deadlock Scenarios
+					"Workshop - Improve your DBA Skills"
 
-	Date:		January 2025
+	Version:	1.00.000
+
+	Date:		October 2025
+	Revion:		October 2025
 
 	SQL Server Version: >= 2016
 	============================================================================

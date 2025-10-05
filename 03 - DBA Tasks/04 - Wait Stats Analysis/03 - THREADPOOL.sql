@@ -5,15 +5,15 @@
 	Summary:	This script demonstrates the wait stat THREADPOOL
 
 				THIS SCRIPT IS PART OF THE TRACK:
-					"Workshop - Improve Your Skills as a SQL Server DBA"
+					"Workshop - Improve your DBA Skills"
 
-	NOTE:		You must run the script "03 - sp_reset_counters.sql" first
-				to use the stored procedure for clearing of counters!
+	Version:	1.00.000
 
-	Date:		March 2024
+	Date:		October 2025
+	Revion:		October 2025
 
-	SQL Server Version: >=2016
-    ============================================================================
+	SQL Server Version: >= 2016
+	============================================================================
 */
 USE master;
 GO

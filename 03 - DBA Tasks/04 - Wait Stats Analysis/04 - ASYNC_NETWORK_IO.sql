@@ -5,12 +5,15 @@
 	Summary:	This script demonstrates the wait stat ASYNC_NETWORK_IO
 
 				THIS SCRIPT IS PART OF THE TRACK:
-					"Workshop - Improve Your Skills as a SQL Server DBA"
+					"Workshop - Improve your DBA Skills"
 
-	Date:		March 2025
+	Version:	1.00.000
 
-	SQL Server Version: >=2016
-    ============================================================================
+	Date:		October 2025
+	Revion:		October 2025
+
+	SQL Server Version: >= 2016
+	============================================================================
 */
 USE master;
 GO

@@ -6,11 +6,14 @@
 				the analysis of the XEvent which tracks page splits
 
 				THIS SCRIPT IS PART OF THE TRACK:
-					"Index Rebuild vs Index Reorganize"
+					"Workshop - Improve your DBA Skills"
 
-	Date:		June 2025
+	Version:	1.00.000
 
-	SQL Server Version: 2016 / 2017 / 2019
+	Date:		October 2025
+	Revion:		October 2025
+
+	SQL Server Version: >= 2016
 	============================================================================
 */
 SET NOCOUNT ON;

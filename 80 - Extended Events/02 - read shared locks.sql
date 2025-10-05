@@ -5,10 +5,13 @@
 	Summary:	creates an Extended Event to track all locks from a SELECT
 				against a resource in READ COMMITTED isolation level
 				
-				THIS SCRIPT IS PART OF THE WORKSHOP:
-					"Improve your Skills as a SQL Server DBA"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
 
-	Date:		January 2025
+	Version:	1.00.000
+
+	Date:		October 2025
+	Revion:		October 2025
 
 	SQL Server Version: >= 2016
 	============================================================================

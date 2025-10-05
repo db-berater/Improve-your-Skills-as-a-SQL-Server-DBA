@@ -4,15 +4,15 @@
 
 	Summary:	This script demonstrates the wait stat: SOS_SCHEDULER_YIELD
 
-				THIS SCRIPT IS PART OF THE WORKSHOP:
-					"Improve your Skills as a SQL Server DBA"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
+
+	Version:	1.00.000
 
 	Date:		October 2025
+	Revion:		October 2025
 
-	NOTE:		You must run the script "03 - sp_reset_counters.sql" first
-				to use the stored procedure for clearing of counters!
-
-	SQL Server Version: >=2016
+	SQL Server Version: >= 2016
 	============================================================================
 */
 SET NOCOUNT ON;

@@ -12,12 +12,10 @@
 		run this script in SQLCMD modues
 		change the path definition in the SQLCMD variables
 
-		DataPath:	Path to the file location of database files
-		LogPath:	Path to the file location of the log files
 		BackupPath:	Path to the backup file which needs to be restored
 	*/
 */
--- Do not change this parameter!
+
 :SETVAR	DatabaseName	ERP_Demo
 :SETVAR BackupPath		S:\Backup\ERP_DEMO_2012.BAK
 

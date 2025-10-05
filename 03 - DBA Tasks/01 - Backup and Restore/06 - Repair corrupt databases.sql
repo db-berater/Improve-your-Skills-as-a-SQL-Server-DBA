@@ -2,23 +2,17 @@
 	============================================================================
 	File:		0030 - Repair corrupt databases.sql
 
-	Summary:	This script demonstrates different ways to backup databases!
+	Summary:	This demo describes the possible steps to repair a corrupt database
 								
-				THIS SCRIPT IS PART OF THE TRACK: "SQL Server - Backup and Restore"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
 
-	Date:		November 2018
+	Version:	1.00.000
 
-	SQL Server Version: 2016 / 2017
-------------------------------------------------------------------------------
-	Written by Uwe Ricken, db Berater GmbH
+	Date:		October 2025
+	Revion:		October 2025
 
-	This script is intended only as a supplement to demos and lectures
-	given by Uwe Ricken.  
-  
-	THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF 
-	ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED 
-	TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
-	PARTICULAR PURPOSE.
+	SQL Server Version: >= 2016
 	============================================================================
 */
 USE master;
@@ -27,11 +21,15 @@ GO
 RESTORE FILELISTONLY FROM DISK = N'S:\Backup\CorruptDatabase.bak';
 GO
 
-RESTORE DATABASE demo_db FROM DISK = N'S:\Backup\CorruptDatabase.bak'
+DECLARE	@DataPath	NVARCHAR(256) = CAST(SERVERPROPERTY('InstanceDefaultDataPath') AS NVARCHAR(256)) + N'CorruptDB.mdf';;
+DECLARE @LogPath	NVARCHAR(256) = CAST(SERVERPROPERTY('InstanceDefaultLogPath') AS NVARCHAR(256)) + N'CorruptDB.ldf';
+
+
+RESTORE DATABASE CorruptDB FROM DISK = N'S:\Backup\CorruptDatabase.bak'
 WITH
 	REPLACE,
-	MOVE N'demo_db' TO N'F:\MSSQL16.SQL_2022\MSSQL\DATA\demo_db.mdf',
-	MOVE N'demo_db_log' TO N'L:\MSSQL16.SQL_2022\MSSQL\Data\demo_db_log.ldf',
+	MOVE N'demo_db' TO @DataPath,
+	MOVE N'demo_db_log' TO @LogPath,
 	RECOVERY,
 	STATS = 10;
 GO

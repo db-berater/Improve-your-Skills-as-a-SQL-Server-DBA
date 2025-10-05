@@ -51,14 +51,15 @@ https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-o
 # 01 - Preparation and Presentation
 This folder contains all Powerpoint Presentations required for this workshop
 + Powerpoint Slides
-+ Stored Procedure for the restore of ERP_Demo Database (not required)_
++ Powershell Script for the creation of an SQL Alias: SQLServer
++ Stored Procedure for the restore of ERP_Demo Database (must be executed before the script [01 - Preparation of demo databases]!)
 + Preparation of demo database
 + Stored Procedure for the creation of a demo_db Database for dedicated scenarios
   The stored procedure will be created in the master database and marked as system object!
 + Stored Procedure for the reset of User Counters and Wait Stats Analysis
-+ Stored Procedure for reading data from the Ring Buffer and display it as table
++ Stored Procedures for reading data from the Ring Buffer and display it as table
 
-NOTE: All Stored Procedures will automatically be created when you restore the ERP_Demo Database by script "01 - Preparation of demo database.sql"
+NOTE: All Stored Procedures will automatically be created when you restore the ERP_Demo Database by script "[01 - Preparation of demo database]."
 
 # 02 - Analysis Tools
 This folder contains workloads/demos to demonstrate the following Analysis Tools

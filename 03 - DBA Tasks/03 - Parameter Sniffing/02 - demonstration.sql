@@ -5,23 +5,15 @@
 	Summary:	This script demonstrates the problems / side effects of 
 				parameter sniffing
 				
-				THIS SCRIPT IS PART OF THE WORKSHOP:
-					"Improve your Skills as a SQL Server DBA"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
+
+	Version:	1.00.000
 
 	Date:		October 2025
 	Revion:		October 2025
 
 	SQL Server Version: >= 2016
-	------------------------------------------------------------------------------
-	Written by Uwe Ricken, db Berater GmbH
-
-	This script is intended only as a supplement to demos and lectures
-	given by Uwe Ricken.  
-  
-	THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF 
-	ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED 
-	TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
-	PARTICULAR PURPOSE.
 	============================================================================
 */
 USE demo_db;

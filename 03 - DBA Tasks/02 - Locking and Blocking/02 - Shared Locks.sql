@@ -5,8 +5,10 @@
 	Summary:	This script demonstrates the usage of shared locks in HEAPS
 				and/or CLUSTERED INDEXES
 				
-				THIS SCRIPT IS PART OF THE WORKSHOP:
-					"Improve your Skills as a SQL Server DBA"
+				THIS SCRIPT IS PART OF THE TRACK:
+					"Workshop - Improve your DBA Skills"
+
+	Version:	1.00.000
 
 	Date:		October 2025
 	Revion:		October 2025
