@@ -29,14 +29,11 @@ Date:		2025-10-04
 
 **Tip for json scripts for OSTRESS and/or SQLQueryStress**
 All templates reference to a machine called "SQLServer". If you don't want to change the names to your instance name I recommend to create a SQL Alias on your local machine.
-For details see the offical Microsoft documentation:
-https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client?view=sql-server-ver17
+[For details see the offical Microsoft documentation](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client?view=sql-server-ver17).
 
 # Folder structure
 + Each topic has a dedicated scenario which deals with examples concerning the topic
 + All scripts have numbers and basically the script with the prefix 01 is for the preparation of the environment
-+ The folder **SQL ostress** contains .cmd files as substitute for SQL Query Stress (when possible!).
-   To use ostress you must download and install the **[RML Utilities](https://learn.microsoft.com/en-us/troubleshoot/sql/tools/replay-markup-language-utility)**
    
 + The folder **Windows Admin Center** contains json files with the configuration of performance counter. These files can only be used with Windows Admin Center
   - [Windows Admin Center](https://www.microsoft.com/en-us/windows-server/windows-admin-center)
